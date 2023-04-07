@@ -4,7 +4,7 @@ Inspired by https://github.com/ruslangrimov/mnist-minimal-model
 
 ![image](https://user-images.githubusercontent.com/70070682/230638687-9964ddbe-9684-4e3c-8004-5fd2acda878f.png)
 
-import tensorflow as tf
+```import tensorflow as tf
 from keras.models import Model
 from tensorflow_addons.optimizers import AdamW
 from keras.layers import Input, Conv2D, SeparableConv2D, MaxPooling2D, GlobalAveragePooling2D, Dense, Dropout
@@ -77,6 +77,6 @@ while True:
 
     del model
     tf.compat.v1.reset_default_graph
-    tf.keras.backend.clear_session()
+    tf.keras.backend.clear_session()```
 
 ![image](https://user-images.githubusercontent.com/70070682/230638017-41fcfb78-babf-436d-adcf-5d9da45b472f.png)
