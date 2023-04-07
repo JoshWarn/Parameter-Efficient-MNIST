@@ -77,6 +77,7 @@ while True:
 
     del model
     tf.compat.v1.reset_default_graph
-    tf.keras.backend.clear_session()```
+    tf.keras.backend.clear_session()
+```
 
 ![image](https://user-images.githubusercontent.com/70070682/230638017-41fcfb78-babf-436d-adcf-5d9da45b472f.png)
