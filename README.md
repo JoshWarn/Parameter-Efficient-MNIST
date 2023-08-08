@@ -1,5 +1,7 @@
 # Parameter-Efficient-MNIST
-How few parameters do you need to get 99% on MNIST? 5 convolution layers and 697 parameters later, we've found a maximum.
+How many parameters are needed to get 99% of MNIST?
+Well, 697 parameters and 5 convolution layers later, we have an upper limit!
+
 Inspired by https://github.com/ruslangrimov/mnist-minimal-model
 
 ![image](https://github.com/JoshWarn/Parameter-Efficient-MNIST/assets/70070682/ee4dd32c-e995-4345-94f2-ff1583462a95)
