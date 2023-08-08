@@ -28,8 +28,8 @@ def model_function():
     op = AdamW(weight_decay=1e-6, learning_rate=1e-2)
     model.compile(loss='sparse_categorical_crossentropy', optimizer=op, metrics=['accuracy'])
 
-    trainableParams = np.sum([np.prod(v.get_shape()) for v in model.trainable_weights])
-    nonTrainableParams = np.sum([np.prod(v.get_shape()) for v in model.non_trainable_weights])
+    trainableParams = int(np.sum([np.prod(v.get_shape()) for v in model.trainable_weights]))
+    nonTrainableParams = int(np.sum([np.prod(v.get_shape()) for v in model.non_trainable_weights]))
     totalParams = trainableParams + nonTrainableParams
     print(f"Trainable: {trainableParams}, Non-Trainable: {nonTrainableParams}, Total: {totalParams}")
     return model, totalParams
@@ -40,5 +40,5 @@ x_test = np.expand_dims(x_test, axis=-1)
 
 model, params = model_function()
 print(params, print(len(x_test)))
-model.load_weights("697.0_mnist_006_1691302318_0.9903.h5")
+model.load_weights("697_mnist_0.9903.h5")
 model.evaluate(x_test, y_test)
