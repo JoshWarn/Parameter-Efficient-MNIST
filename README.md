@@ -8,7 +8,8 @@ Inspired by https://github.com/ruslangrimov/mnist-minimal-model
 Components optimized:
 - Activation function
 - Kernel initialization
-- # of Kernels per layer, layer numbers
+- Layer count and number of kernels per layer
+- Kernel filter sizes/shapes
 - Dropout %
 - Optimizer (Type, decay, lrs)
 - LR Scheduling
